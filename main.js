@@ -754,6 +754,21 @@ function addToTotal() {
     calculateTotal();
 }
 
+function subtractFromTotal() {
+    //get times in frames
+    let rawStartFrames = Math.floor(currentStartTime * framerate);
+    let rawEndFrames = Math.floor(currentEndTime * framerate);
+    let rawFrames = rawEndFrames - rawStartFrames;
+
+    totalTime -= rawFrames;
+
+    if (totalTime < 0) {
+        totalTime = 0;
+    }
+
+    calculateTotal();
+}
+
 function resetTotal() {
     totalTime = 0;
 

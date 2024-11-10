@@ -72,8 +72,8 @@
           </p>
           <p><input type="text" id="startFrameTime" style='width:40' readonly></p>
           <p><button id="sync" onclick="setStartToEnd()">Set to Current End Frame</button></p>
-          <p><button id="add" onclick="addToTotal()">Add Segment to Total Time</button></p>
-          <p><button id="reset" onclick="resetTotal()">Reset Total Time</button></p>
+          <p><button id="add" onclick="addToTotal()">Add to Total</button>   <button id="subtract" onclick="subtractFromTotal()">Subtract from Total</button> 
+             <button id="reset" onclick="resetTotal()">Reset Total</button></p>
         </div>
         <div style="float:left; margins">
           <h3>End Frame</h3>
@@ -116,7 +116,6 @@
         <label for="msTime"><code>(hh:mm:ss.ms)</code> </label>
         <input type="text" id="msTime" style='width:40' readonly>
       </p>
-      <br>
 
       <h3>Total Time</h3>
       <p>
